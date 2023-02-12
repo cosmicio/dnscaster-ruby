@@ -20,5 +20,9 @@ module Dnscaster
       end
     end
 
+    initializer "dnscaster.logger" do |app|
+      Dnscaster::Api.logger = Rails.logger
+    end
+
   end
 end
