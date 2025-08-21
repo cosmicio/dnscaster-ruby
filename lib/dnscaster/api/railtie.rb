@@ -16,7 +16,7 @@ module Dnscaster
       require 'dnscaster/api/log_subscriber'
       ActiveSupport.on_load(:action_controller) do
         include NCore::ControllerRuntime
-        register_api_runtime Dnscaster::LogSubscriber, 'Dnscaster'
+        register_api_runtime Dnscaster::LogSubscriber, 'DNScaster'
       end
     end
 

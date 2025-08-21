@@ -18,14 +18,13 @@ module Dnscaster
 
     self.strict_attributes = true
 
-
     self.i18n_scope = :dnscaster
 
     self.instrument_key = 'request.dnscaster'
 
     self.status_page = 'http://status.notioneer.com/'
 
-    self.auth_header_prefix = 'Dnscaster'
+    self.auth_header_prefix = 'dnscaster'
 
     self.bearer_credential_key = :api_key
 
