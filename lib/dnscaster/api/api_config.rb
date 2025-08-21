@@ -2,7 +2,9 @@ module Dnscaster
   include NCore::Builder
 
   configure do
-    self.default_url = ENV['DNSCASTER_URL'] || 'https://api.dnscaster.com/v1/'
+    self.default_url = proc do
+      ENV['DNSCASTER_URL'] || 'https://api.dnscaster.com/v1/'
+    end
 
     self.default_headers = {
       accept: 'application/json',
@@ -10,9 +12,9 @@ module Dnscaster
       user_agent: "DNScaster/ruby v#{VERSION} [nc #{NCore::VERSION}]"
     }
 
-    self.credentials = {
-      api_key: ENV['DNSCASTER_KEY']
-    }
+    self.credentials = proc do
+      { api_key: ENV['DNSCASTER_KEY'] }
+    end
 
     self.debug = false
 
