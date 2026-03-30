@@ -6,7 +6,7 @@ module Dnscaster
     belongs_to :vanity_zone
     has_many :zones
 
-    attr :default_set, :external_ref, :pattern
+    attr :default_set, :pattern, :properties
     attr :in_use, :name, :vanity_domain # readonly
 
 

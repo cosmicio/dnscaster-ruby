@@ -8,7 +8,7 @@ module Dnscaster
     has_many :vanity_sets
     has_many :zones
 
-    attr :external_ref, :hostmaster, :ip_ttl, :name, :ns_ttl
+    attr :hostmaster, :ip_ttl, :name, :ns_ttl, :properties
     attr :in_use # readonly
 
   end

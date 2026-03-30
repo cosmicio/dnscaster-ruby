@@ -5,7 +5,7 @@ module Dnscaster
     belongs_to :nameserver_set
     has_many :hosts
 
-    attr :external_ref, :ips, :locations, :name
+    attr :ips, :locations, :name, :properties
     attr :in_use # readonly
 
   end

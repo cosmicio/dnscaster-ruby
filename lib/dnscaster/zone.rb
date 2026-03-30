@@ -7,7 +7,7 @@ module Dnscaster
     belongs_to :vanity_set
     has_many :hosts
 
-    attr :default_ttl, :domain, :external_ref, :nx_ttl, :tags
+    attr :default_ttl, :domain, :nx_ttl, :properties, :tags
     attr :delegation_updates, :glue_updates
     attr :notes
     attr :delegation_errors, :domain_utf8, :glue_errors, :in_use, :synced # readonly
