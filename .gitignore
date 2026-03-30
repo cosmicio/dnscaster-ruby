@@ -6,6 +6,7 @@ doc/
 Gemfile.lock
 pkg/
 rdoc
+.ruby-*
 spec/reports/
 test/tmp
 test/version_tmp
