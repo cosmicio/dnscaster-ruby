@@ -3,7 +3,6 @@
 .config
 coverage/
 doc/
-Gemfile.lock
 pkg/
 rdoc
 .ruby-*
